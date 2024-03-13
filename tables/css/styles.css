@@ -1,0 +1,38 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+container{
+    width: 75%;
+    margin: 30px auto;
+    border: 4px darkslateblue;
+    overflow: auto;
+    padding: 18px;
+}
+
+h1{
+    color: dodgerblue;
+    text-align:center;
+}
+
+h2{
+    text-align:center;
+}
+
+nav{
+    text-align:center;
+}
+nav a{
+    text-decoration: wavy;
+    background-color: darkgray;
+    border: 2px solid gold;
+    border-radius: 10px;
+    color: aquamarine;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+nav a:hover{
+    color: lightseagreen;
+    background-color: honeydew;
+}
