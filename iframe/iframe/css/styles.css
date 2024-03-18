@@ -1,0 +1,27 @@
+body{
+    background-color: blanchedalmond;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+iframe{
+    width: 90%;
+    height: 500px;
+    border:none;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: darkorchid;
+    margin-top: 50px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(19, 107, 119);
+    margin-top: 50px;
+}
