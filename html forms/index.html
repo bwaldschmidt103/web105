@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <meta http-equiv="X-XU-Compatible" content="IE=edge">    
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HTML Forms</title>    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form Example</h1>
+
+        <form>
+            <h3>WAE Application</h3>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+            <h3>Position Type</h3>
+            <input type="radio" id="HR" name="position" value="HR">
+            <label for="HR">Human Resources</label><br>
+            <input type="radio" id="CS" name="position" value="CS">
+            <label for="CS">Customer Service</label><br>
+            <input type="radio" id="IT" name="position" value="IT">
+            <label for="IT">Information Technology</label><br>
+            <input type="radio" id="ACCG" name="position" value="ACCG">
+            <label for="ACCG">Accounting</label><br>
+            <input type="radio" id="MKTG" name="position" value="MKTG">
+            <label for="MKTG">Marketing</label><br>
+            <input type="radio" id="MAINT" name="position" value="MAINT">
+            <label for="MAINT">Maintenance</label><br>
+            <input type="radio" id="CA" name="position" value="CA">
+            <label for="CA">Creative Arts</label><br>
+            <input type="radio" id="TW" name="position" value="TW">
+            <label for="TW">Technical Writer</label><br>
+            <input type="radio" id="ENGR" name="position" value="ENGR">
+            <label for="ENGR">Engineer</label><br>
+            <input type="radio" id="MGMT" name="position" value="MGMT">
+            <label for="MGMT">Management</label><br>
+            <h3>Educational Background</h3>
+            <select id="EB" name="educational background">
+                <option value="GED">GED</option>
+                <option value="High School Diploma">High School Diploma</option>
+                <option value="Associate Degree">Associate Degree</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="EdD/PhD">EdD/PhD</option>
+                <option value="Other">Other</option>
+            </select>
+            <h3>Certifications</h3>
+            <input type="radio" id="Yes" name="certification(s)" value="Yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="certification(s)" value="No">
+            <label for="No">No</label><br>
+            <h3>Area of Specialty/Focus</h3>
+            <textarea name="Skill Focus" rows="10" cols="120" placeholder="Enter any skill focuses / specialties here"></textarea>          
+            <br>
+
+            <input type="submit" value="submit">        
+            
+        </form>
+
+
+    </div>
+
+
+</body>

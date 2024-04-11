@@ -1,0 +1,78 @@
+/* ---------------------- layout ------------------------- */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2cm;
+    background-color: rgb(255, 255, 238);
+    color: black;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    min-width: 500px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    min-height: 80px;
+    text-align: center;
+}
+
+h2 {
+    color: navy;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5cm;
+}
+
+h1 {
+    font-size: 2cm;
+    text-align: center;
+    color: navy;
+}
+
+img {
+    width: 500px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    background: black;
+    box-sizing: border-box;
+}
+
+.grid-container>div {
+    background-color: cadetblue;
+    padding: 20px 0;
+    min-height: 100px;
+    width: 100%;
+}
+
+.grid-container>div>img {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
+}
+
+#large {
+    box-sizing: border-box;
+    padding: 20px;
+    background: black;
+    width: 60%;
+    margin: 10px auto;
+    display: block;
+}
+
