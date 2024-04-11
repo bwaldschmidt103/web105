@@ -1,0 +1,32 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, 
+h2, 
+p {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e74c3c;
+}
+
+h2 {
+    color: #3498db;
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
