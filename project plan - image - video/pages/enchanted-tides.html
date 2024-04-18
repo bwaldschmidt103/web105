@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">    
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>project plan - image - video</title>
+
+    <style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    font-family: Vollkorn, serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    background-color: #B6B6B6;
+    color: black;
+}
+
+Vollkorn: CSS class for a variable style
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.vollkorn-<uniquifier> {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    min-width: 500px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    min-height: 80px;
+    text-align: center;
+}
+
+
+h2 {
+    color: #1C3051;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5cm;
+}
+
+h1 {
+    font-size: 2cm;
+    text-align: center;
+    color: #111016;
+}
+
+table,
+        th,
+        td {
+            border: 1px solid rgb(42, 5, 207);
+        }
+        table {
+            margin: 20px auto;
+        }
+        nav{
+        text-align:center;
+        font-size:x-large;
+        }
+
+        nav a{
+        text-decoration: none;
+        margin-left: 20px;
+        background-color: rgb(0, 0, 255);
+        padding: 5px 15px;
+        color:goldenrod;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 0, 0);
+        }
+
+        nav a:hover {
+        background-color:darkslateblue;
+        color:greenyellow;
+        }
+
+img {
+    width: 1000px;
+}
+
+figure {
+    min-height: 80px;
+    text-align: center;
+}
+
+
+nav{
+    text-align: center;
+}
+/* Reset default list styles */
+ul.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the navbar links */
+ul.navbar li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Style the lozenge-shaped buttons */
+ul.navbar li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 255);
+    color: goldenrod;
+    text-decoration: none;
+    border-radius: 25px;
+    /* Adjust the value for the desired roundness */
+}
+
+/* Remove underlines on hover and active state */
+
+ul.navbar li a:hover,
+ul.navbar li a:active {
+    text-decoration: none;
+}
+/* ********************************Media Queries 
+/* For mobile phones: */
+
+/* the media queries are from W3Schools */
+
+/* For mobile phones: */
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+    background-color: #1C3051;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #1C3051;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+    background-color: #1C3051;
+}
+
+ul.navbar li a:hover{
+    background-color:darkslateblue;
+    color:greenyellow;
+}
+ul.navbar li a:active {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: contents;
+    gap: 10px;
+    background-color: #1C3051;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: #1C3051;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .item3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .item4 {
+    grid-column: 1;
+    grid-row: 1 ;
+  }
+  
+  .item5 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    ul{
+        margin-top: 70px;
+    }
+
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+  <header>
+      <h1>Mystical Stories by Brian Waldschmidt</h1>
+      <p>&nbsp;</p>
+
+
+      <nav>
+        <ul class="navbar" >
+          <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2"><li><a href="../index.html">Stardust Dreams</a></li></div>
+          <div class="col-2"><li><a href="../pages/enchanted-blossom.html">Tale of Wildflowers</a></li></div>
+          <div class="col-2"><li><a href="../pages/sunflower-cloud.html">Sunflower Cloud</a></li></div>
+          <div class="col-2"><li><a href="pages/enchanted-tides.html">Enchanted Tides</a></li></div>
+          <div class="col-2"><li><a href="../pages/whispering-willow.html">Whispering Willow</a></li></div>
+          <div class="col-1"></div>
+        </div>
+                 
+        </ul>
+      </nav>
+  </header>
+  <main>
+      <h2>“The Enchanted Tides”</h2>
+      <div class="container">
+          <p></p>
+
+      </div>      
+  </main>
+
+  <figure>
+    <div class="enchanted tides">
+        <img src="../images/the tides of water.jpg" alt="The Tides of Water">
+
+    </div>
+</figure>
+
+<aside id="enchanted tides">
+    <div class="enchanted tides">
+        
+        <p>
+        Once upon a time, in a quaint coastal village named Seabrook, there existed a magical secret hidden beneath the waves. The villagers spoke of it in hushed tones, passing down stories from generation to generation. They called it the Enchanted Tides.
+        <p>&nbsp;</p>
+        Young Lily, with her curious eyes and wild imagination, was drawn to the sea. She spent her days collecting seashells and listening to the rhythmic lullaby of the waves. But Lily sensed there was more to the ocean than met the eye. She yearned for adventure, for a glimpse of the mystical world that lay beneath.
+        <p>&nbsp;</p>
+        One stormy night, as lightning cracked the sky and waves roared, Lily stood on the cliff overlooking the tempestuous sea. She clutched a worn-out map—a map that had been handed down by her grandmother. It depicted a hidden cave, accessible only during the highest tide of the year.
+        <p>&nbsp;</p>
+        Lily’s heart raced as she followed the map’s cryptic instructions. She waded through foamy waters, her lantern casting eerie shadows on the rocks. The cave entrance loomed ahead, its mouth wide open like a yawning dragon.
+        <p>&nbsp;</p>
+        Inside, the air smelled of salt and secrets. Stalactites dripped with a phosphorescent glow, illuminating the cavern. And there, in the heart of the cave, lay a shimmering pool—the fabled Enchanted Tides.
+        <p>&nbsp;</p>
+        The water sparkled with hues of aquamarine and coral pink. Lily dipped her fingers, and a surge of magic coursed through her veins. She gasped as her legs transformed into a silvery tail—the tail of a mermaid! She was no longer Lily from Seabrook; she was Lily of the Tides.
+        <p>&nbsp;</p>
+        Lily swam deeper, encountering schools of iridescent fish and coral castles. She met Marina, the wise sea turtle, who spoke of forgotten shipwrecks and sunken treasures. She danced with Coralia, the mischievous mermaid, whose laughter echoed through the underwater caves.
+        <p>&nbsp;</p>
+        But the Enchanted Tides held a secret—a curse that bound its magic to the moon. Every full moon, the tides would rise, and Lily would lose her human form. She would become a sea creature, unable to return to land until dawn.
+        <p>&nbsp;</p>
+        As the full moon approached, Lily faced a choice: embrace her newfound life or break the curse. She sought the Ancient Conch, said to grant wishes to those who listened closely. The conch whispered, “To break the curse, sacrifice what you love most.”
+        <p>&nbsp;</p>
+        Lily hesitated. She loved her family, her village, and the sun-kissed cliffs. But she also loved the freedom of the sea, the thrill of riding seahorses, and the camaraderie of underwater creatures.
+        <p>&nbsp;</p>
+        On the night of the full moon, Lily stood at the cave’s entrance. The waves surged, pulling her toward the depths. She gazed at the moon, torn between two worlds. And then, with tears in her eyes, she whispered her wish to the sea:
+        <p>&nbsp;</p>
+        “Let me be both—mermaid and girl. Let the tides bind us forever.”
+        <p>&nbsp;</p>
+        And so, the Enchanted Tides granted her wish. Lily could now walk on land during the day and swim in the moon-kissed waters at night. She became the bridge between two realms, sharing stories of Seabrook with the sea creatures and tales of the Enchanted Tides with her human friends.
+        <p>&nbsp;</p>
+        And if you visit Seabrook today, listen carefully—you might hear Lily’s laughter carried by the wind, a reminder that magic exists where the tides meet the heart.
+        <p>&nbsp;</p>
+        ____________________________________________________________________________________________________________________________________________________________
+        <p>&nbsp;</p>
+        And so, ends our tale, dear reader. Remember, the Enchanted Tides await those who dare to dream beyond the shore. 🌊🧜‍♀️🌟
+               
+        </p>
+
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+<footer>
+    
+    <p>&nbsp;</p>
+    <p>&copy; 2024 Brian Waldschmidt</p>
+</footer>
+
+
+
+
+</body>
+  
+</html>

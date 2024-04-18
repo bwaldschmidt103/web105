@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">    
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>project plan - image - video</title>
+
+    <style>
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    font-family: Vollkorn, serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    background-color: #B6B6B6;
+    color: black;
+}
+
+Vollkorn: CSS class for a variable style
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.vollkorn-<uniquifier> {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    min-width: 500px;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    min-height: 80px;
+    text-align: center;
+}
+
+
+h2 {
+    color: #1C3051;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5cm;
+}
+
+h1 {
+    font-size: 2cm;
+    text-align: center;
+    color: #111016;
+}
+
+table,
+        th,
+        td {
+            border: 1px solid rgb(42, 5, 207);
+        }
+        table {
+            margin: 20px auto;
+        }
+        nav{
+        text-align:center;
+        font-size:x-large;
+        }
+
+        nav a{
+        text-decoration: none;
+        margin-left: 20px;
+        background-color: rgb(0, 0, 255);
+        padding: 5px 15px;
+        color:goldenrod;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 0, 0);
+        }
+
+        nav a:hover {
+        background-color:darkslateblue;
+        color:greenyellow;
+        }
+
+img {
+    width: 1000px;
+}
+
+figure {
+    min-height: 80px;
+    text-align: center;
+}
+
+
+nav{
+    text-align: center;
+}
+/* Reset default list styles */
+ul.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the navbar links */
+ul.navbar li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Style the lozenge-shaped buttons */
+ul.navbar li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 255);
+    color: goldenrod;
+    text-decoration: none;
+    border-radius: 25px;
+    /* Adjust the value for the desired roundness */
+}
+
+/* Remove underlines on hover and active state */
+
+ul.navbar li a:hover,
+ul.navbar li a:active {
+    text-decoration: none;
+}
+/* ********************************Media Queries 
+/* For mobile phones: */
+
+/* the media queries are from W3Schools */
+
+/* For mobile phones: */
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+    background-color: #1C3051;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #1C3051;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+    background-color: #1C3051;
+}
+
+ul.navbar li a:hover{
+    background-color:darkslateblue;
+    color:greenyellow;
+}
+ul.navbar li a:active {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: contents;
+    gap: 10px;
+    background-color: #1C3051;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: #1C3051;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .item2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .item3 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .item4 {
+    grid-column: 1;
+    grid-row: 1 ;
+  }
+  
+  .item5 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    ul{
+        margin-top: 70px;
+    }
+
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+  <header>
+      <h1>Mystical Stories by Brian Waldschmidt</h1>
+      <p>&nbsp;</p>
+
+      <nav>
+        <ul class="navbar" >
+          <div class="row">
+          <div class="col-1"></div>
+          <div class="col-2"><li><a href="../index.html">Stardust Dreams</a></li></div>
+          <div class="col-2"><li><a href="../pages/enchanted-blossom.html">Tale of Wildflowers</a></li></div>
+          <div class="col-2"><li><a href="../pages/sunflower-cloud.html">Sunflower Cloud</a></li></div>
+          <div class="col-2"><li><a href="../pages/enchanted-tides.html">Enchanted Tides</a></li></div>
+          <div class="col-2"><li><a href="pages/whispering-willow.html">Whispering Willow</a></li></div>
+          <div class="col-1"></div>
+        </div>
+                 
+        </ul>
+      </nav>
+
+  </header>
+  <main>
+      <h2>“The Whispering Willow”</h2>
+      <div class="container">
+          <p></p>
+
+      </div>      
+  </main>
+
+  <figure>
+    <div class="whispering willow">
+        <img src="../images/the tree and his mystical companions.jpg" alt="The Tree and His Mystical Companions">
+
+    </div>
+</figure>
+
+<aside id="whispering willow">
+    <div class="whispering willow">
+        
+        <p>Once upon a time, in the heart of the Enchanted Forest, stood a magnificent tree named Willow. Its gnarled roots reached deep into the earth, and its branches stretched high into the sky, adorned with leaves that shimmered like silver coins. But Willow was no ordinary tree; it was a Whispering Willow, and it held secrets older than time itself.
+        <p>&nbsp;</p>
+        Every night, when the moon hung low and the stars blinked their ancient songs, Willow would awaken. Its bark would soften, and its leaves would rustle with anticipation. For you see, Willow had mystical companions—tiny beings known as Leafwhispers. They were no taller than a blade of grass, with wings like gossamer and eyes that sparkled like dewdrops.
+        <p>&nbsp;</p>
+        The Leafwhispers flitted around Willow, weaving spells of protection and enchantment. They whispered to the wind, urging it to carry their magic across the forest. Creatures of all kinds sought refuge under Willow’s branches—the Glimmering Fireflies, who painted the night with their luminescent dance; the Moonshadow Owls, who guarded dreams and memories; and the elusive Stardust Squirrels, who collected fallen stars and stored them in their acorn homes.
+        <p>&nbsp;</p>
+        But Willow’s closest companion was Briar, a mischievous Leafwhisper with a penchant for adventure. Briar wore a cloak made of moonbeams and carried a tiny lantern that glowed with the colors of the rainbow. Each night, Briar would climb to the highest branch and peer into the human world.
+        <p>&nbsp;</p>
+        One chilly evening, as the first snowflakes danced, Briar spotted a lonely girl named Evelyn sitting beneath Willow. Her eyes were filled with tears, and her heart heavy with sorrow. Briar fluttered down and perched on Evelyn’s shoulder.
+        <p>&nbsp;</p>
+        “Why so sad, dear child?” Briar asked, her voice like a gentle breeze.
+        <p>&nbsp;</p>
+        Evelyn looked up, surprised. “I miss my grandmother,” she whispered. “She used to tell me stories about magical trees and hidden realms.”
+        <p>&nbsp;</p>
+        Briar’s eyes sparkled. “Ah, your grandmother knew the secrets of the Whispering Willows. Come, follow me.”
+        <p>&nbsp;</p>
+        And so, hand in hand, Briar led Evelyn through a hidden passage in Willow’s trunk. The air smelled of moss and starlight, and the ground glowed with soft luminescence. They emerged into a magical glade—the Glimmerwood.
+        <p>&nbsp;</p>
+        Here, the trees hummed with ancient wisdom, and the flowers sang lullabies to the moon. Evelyn’s tears turned to wonder as she met the Luminafoxes, creatures with fur like spun silver, and danced with the Moonbutterflies, whose wings shimmered like opals.
+        <p>&nbsp;</p>
+        Briar introduced Evelyn to Willow’s oldest friend—the Ancient Oak, whose roots connected to every corner of the forest. The Ancient Oak whispered tales of forgotten kingdoms, lost spells, and the power of love.
+        <p>&nbsp;</p>
+        As dawn approached, Briar guided Evelyn back to the human world. “Remember,” she said, “magic exists where hearts believe.”
+        <p>&nbsp;</p>
+        Evelyn hugged Willow’s trunk. “Thank you,” she whispered.
+        <p>&nbsp;</p>
+        From that day on, Willow’s leaves rustled with a new song—a song of hope and friendship. And whenever the wind blew, it carried the laughter of Leafwhispers and the memory of Evelyn’s adventure.
+        <p>&nbsp;</p>
+        And so, dear reader, if you ever find yourself near an old tree, listen closely. Perhaps it’s a Whispering Willow, waiting to share its secrets with you. 🌳✨
+                             
+        </p>
+
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+<footer>
+    
+    <p>&nbsp;</p>
+    <p>&copy; 2024 Brian Waldschmidt</p>
+</footer>
+
+</body>
+  
+</html>
