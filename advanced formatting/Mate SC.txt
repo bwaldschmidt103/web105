@@ -1,0 +1,10 @@
+
+
+
+Mate SC: CSS class
+
+.mate-sc-regular {
+  font-family: "Mate SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
