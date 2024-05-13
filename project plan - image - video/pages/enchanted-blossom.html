@@ -8,323 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playball&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">    
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>project plan - image - video</title>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <title>Enchanted Blossom</title>
 
-    <style>
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-body {
-    font-family: Vollkorn, serif;
-    line-height: 1.5;
-    font-size: 1.2em;
-    background-color: #B6B6B6;
-    color: black;
-}
-
-Vollkorn: CSS class for a variable style
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 400 to 900
-
-.vollkorn-<uniquifier> {
-  font-family: "Vollkorn", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.container {
-    width: 90%;
-    max-width: 1400px;
-    min-width: 500px;
-    margin: 20px auto;
-    overflow: auto;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-}
-
-header {
-    min-height: 80px;
-    text-align: center;
-}
-
-
-h2 {
-    color: #1C3051;
-    text-align: center;
-    margin: 20px;
-    font-size: 1.5cm;
-}
-
-h1 {
-    font-size: 2cm;
-    text-align: center;
-    color: #111016;
-}
-
-table,
-        th,
-        td {
-            border: 1px solid rgb(42, 5, 207);
-        }
-        table {
-            margin: 20px auto;
-        }
-        nav{
-        text-align:center;
-        font-size:x-large;
-        }
-
-        nav a{
-        text-decoration: none;
-        margin-left: 20px;
-        background-color: rgb(0, 0, 255);
-        padding: 5px 15px;
-        color:goldenrod;
-        border-radius: 10px;
-        border: 2px solid rgb(255, 0, 0);
-        }
-
-        nav a:hover {
-        background-color:darkslateblue;
-        color:greenyellow;
-        }
-
-img {
-    width: 1000px;
-}
-
-figure {
-    min-height: 80px;
-    text-align: center;
-}
-
-
-nav{
-    text-align: center;
-}
-/* Reset default list styles */
-ul.navbar {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Style the navbar links */
-ul.navbar li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-/* Style the lozenge-shaped buttons */
-ul.navbar li a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgb(0, 0, 255);
-    color: goldenrod;
-    text-decoration: none;
-    border-radius: 25px;
-    /* Adjust the value for the desired roundness */
-}
-
-/* Remove underlines on hover and active state */
-
-ul.navbar li a:hover,
-ul.navbar li a:active {
-    text-decoration: none;
-}
-/* ********************************Media Queries 
-/* For mobile phones: */
-
-/* the media queries are from W3Schools */
-
-/* For mobile phones: */
-* {
-    box-sizing: border-box;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-
-html {
-    font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-    background-color: #1C3051;
-    color: #ffffff;
-    padding: 15px;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    padding: 8px;
-    margin-bottom: 7px;
-    background-color: #1C3051;
-    color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.menu li:hover {
-    background-color: #1C3051;
-}
-
-ul.navbar li a:hover{
-    background-color:darkslateblue;
-    color:greenyellow;
-}
-ul.navbar li a:active {
-    text-decoration: none;
-}
-
-.grid-container {
-    display: contents;
-    gap: 10px;
-    background-color: #1C3051;
-    padding: 10px;
-  }
-  
-  .grid-item {
-    background-color: #1C3051;
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-  }
-  
-  .item1 {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  
-  .item2 {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  .item3 {
-    grid-column: 3;
-    grid-row: 1;
-  }
-
-  .item4 {
-    grid-column: 1;
-    grid-row: 1 ;
-  }
-  
-  .item5 {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-    
-}
-
-@media only screen and (min-width: 768px) {
-
-    /* For desktop: */
-    ul{
-        margin-top: 70px;
-    }
-
-
-    .col-1 {
-        width: 8.33%;
-    }
-
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
-    }
-}
-    </style>
 
 </head>
 <body>
@@ -337,10 +23,10 @@ ul.navbar li a:active {
           <div class="row">
           <div class="col-1"></div>
           <div class="col-2"><li><a href="../index.html">Stardust Dreams</a></li></div>
-          <div class="col-2"><li><a href="pages/enchanted-blossom.html">Tale of Wildflowers</a></li></div>
-          <div class="col-2"><li><a href="../pages/sunflower-cloud.html">Sunflower Cloud</a></li></div>
-          <div class="col-2"><li><a href="../pages/enchanted-tides.html">Enchanted Tides</a></li></div>
-          <div class="col-2"><li><a href="../pages/whispering-willow.html">Whispering Willow</a></li></div>
+          <div class="col-2"><li><a href="#">Enchanted Blossom</a></li></div>
+          <div class="col-2"><li><a href="sunflower-cloud.html">Sunflower Cloud</a></li></div>
+          <div class="col-2"><li><a href="enchanted-tides.html">Enchanted Tides</a></li></div>
+          <div class="col-2"><li><a href="whispering-willow.html">Whispering Willow</a></li></div>
           <div class="col-1"></div>
         </div>
                  
@@ -348,22 +34,23 @@ ul.navbar li a:active {
       </nav>
   </header>
   <main>
+    <p>&nbsp;</p>
       <h2>“The Enchanted Blossom: A Tale of Wildflowers”</h2>
-      <div class="container">
-         
-      </div>      
+  
   </main>
 
   <figure>
     <div class="enchanted blossom">
         <img src="../images/wild flowers.jpg" alt="Wild Flowers">
-
+        <p>&nbsp;</p>
+        <figcaption>“Fire, an elemental force within the universe, is recognized for its transformative energy and dynamic presence.”</figcaption>
+        <p>&nbsp;</p>
     </div>
 </figure>
 
 <aside id="enchanted blossom">
     <div class="enchanted blossom">
-        
+        <p>&nbsp;</p>
         <p>Once upon a time, in a sun-kissed meadow nestled between rolling hills, there bloomed a magical garden of wildflowers. These were not your ordinary flowers; they were guardians of secrets, keepers of dreams, and messengers of hope. Let me tell you the tale of how they came to be.
         <p>&nbsp;</p>
         In the heart of the meadow stood a gnarled old oak tree named Alder. Alder had witnessed countless seasons, and its roots reached deep into the earth, tapping into ancient wisdom. One spring morning, as the dew glistened on the grass, Alder felt a stirring—a whisper carried by the wind.
