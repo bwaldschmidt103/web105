@@ -15,9 +15,9 @@
         <form>
             <h3>WAE Application</h3>
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
+            <input type="text" id="fname" name="fname" required><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
+            <input type="text" id="lname" name="lname" required><br>
             <h3>Position Type</h3>
             <input type="radio" id="HR" name="position" value="HR">
             <label for="HR">Human Resources</label><br>
@@ -50,10 +50,10 @@
                 <option value="Other">Other</option>
             </select>
             <h3>Certifications</h3>
-            <input type="radio" id="Yes" name="certification(s)" value="Yes">
-            <label for="Yes">Yes</label><br>
-            <input type="radio" id="No" name="certification(s)" value="No">
-            <label for="No">No</label><br>
+            <input type="checkbox" id="Yes" name="certification(s)" value="Yes">
+            <label for="Yes">Yes, I have one or more certifications</label><br>
+            <input type="checkbox" id="No" name="certification(s)" value="No">
+            <label for="No">No, I don't have any certifications</label><br>
             <h3>Area of Specialty/Focus</h3>
             <textarea name="Skill Focus" rows="10" cols="120" placeholder="Enter any skill focuses / specialties here"></textarea>          
             <br>
